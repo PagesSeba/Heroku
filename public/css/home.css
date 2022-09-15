@@ -1,0 +1,67 @@
+.container{
+    margin-top: 50px;
+    background-color: grey;
+    padding-bottom: 10px;
+}
+.containerLogin {
+    background-color: #9ae96f;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+.containerLogout {
+  background-color: cadetblue;
+  margin-top: 50px;
+  padding-bottom: 10px;
+}
+
+.titulo{
+    box-sizing: border-box;
+    padding-top: 20px;
+    color: blue;
+}
+
+.inputEnviar{
+    margin: 20px 0px;
+}
+
+.subtitulo{
+    color: brown;
+}
+
+#table{
+    background-color: rgb(24, 24, 24);
+    color: white;
+    border: 1px solid white;
+}
+
+thead, tbody{
+    text-align: center;
+}
+
+img{
+    width: 8%;
+}
+
+p{
+    display: inline;
+}
+
+.correo{
+    color: blue;
+    font-weight: bold;
+}
+
+.fecha{
+    color: brown;
+}
+
+.mensaje{
+    color: green;
+    font-weight: bold;
+}
+.avatar {
+    width: 45px;
+    height: 40px;
+    border-radius: 100%;
+}

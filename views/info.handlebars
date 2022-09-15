@@ -1,0 +1,57 @@
+<div class="container text-center my-3">
+    <div style="background-color: #e9ecef; padding: 20px 10%; text-align: center;
+    margin: 20px 10%; border-radius: 10px;">
+        <h1 style="color: #0e1afd;">Informacion</h1>
+        <h3>Argumentos</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Argumento</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each info.argumentos}}
+                <tr>
+                    {{#each this}}
+                        <td>{{this}}</td>
+                    {{/each}}
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        <h3>Sistema Operativo</h3>
+        <p>{{info.SO}}</p>
+
+        <h3>Version de node</h3>
+        <p>{{info.v_node}}</p>
+
+        <h3>Memoria total reservada</h3>
+        <p>{{info.rss}}</p>
+
+        <h3>Path de ejecucion</h3>
+        <p>{{info.path}}</p>
+
+        <h3>Process id</h3>
+        <p>{{info.process_id}}</p>
+
+        <h3>Carpeta del proyecto</h3>
+        <p>{{info.carpeta_raiz}}</p>
+
+        <h3>Cantidad de procesadores</h3>
+        <p>{{info.cant_procesadores}}</p>
+    </div>
+
+    <button class="btn btn-info my-5" onclick="volver()">VOLVER</button>
+</div>
+
+<script>
+ function redireccionar(pagina) {
+        location.href = pagina;
+    } 
+
+    function volver() {
+        console.log('volver');
+        redireccionar('/login')
+    }
+</script>
