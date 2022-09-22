@@ -1,0 +1,31 @@
+{{#if admin}}
+<div class='productFormPut'>
+    <form id='productFormPut'>
+        <input type="text"  name='title' value="{{item.title}}" required />
+        <input type="text"  name='description' value="{{item.description}}" required />
+        <input type="text"  name='code' value="{{item.code}}" required />
+        <input type="text"  name='thumbnail' value="{{item.thumbnail}}" required />
+        <input type="number"  name='price' value={{item.price}} required />
+        <input type="number"  name='stock' value={{item.stock}} required />
+        <input type="submit" value='Modificar producto' class='btn' />
+    </form>
+</div>
+{{/if}}
+<div class='item'>
+    <div class='img-container'>
+        <h2> {{item.title}}</h2>
+        <img src={{item.thumbnail}} alt="" />
+    </div>
+    <div class='detail-container'>
+        <h1> {{item.title}} </h1>
+        <p class='price'>Precio: ${{item.price}}</p>
+        <hr />
+        <p class='detail'><b>Descripción: </b>{{item.description}}</p>
+
+        <div class='divSpan'>
+            <button class='buttonAdd' id="addToCart">Agregar al carrito</button>
+            <span>Stock: {{item.stock}}</span>
+            <span>Code: {{item.code}}</span>
+        </div>
+    </div>
+</div>

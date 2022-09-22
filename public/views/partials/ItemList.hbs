@@ -1,0 +1,30 @@
+{{#if admin}}
+<div class='productForm'>
+    <form id='productForm'>
+        <input type="text" name='title' placeholder='title' required />
+        <input type="text" name='description' placeholder='description' required />
+        <input type="text" name='code' placeholder='code' required />
+        <input type="text" name='thumbnail' placeholder='url imagen' required />
+        <input type="number" name='price' placeholder='price' required />
+        <input type="number" name='stock' placeholder='stock' required />
+        <input type="submit" value='Agregar producto' className='btn' id="sendForm" />
+    </form>
+</div>
+{{/if}}
+<div class="list-card">
+    {{#unless products}}
+    {{!-- caso en el que productos esta vacio --}}
+        <h2>No hay resultados...</h2>
+    {{else}}
+    {{!-- caso en el que existen productos --}}
+        {{#unless admin}}
+            {{#each products}}
+                {{>Item item=. admin=false}}
+            {{/each}}
+        {{else}}
+            {{#each products}}
+                {{>Item item=. admin=true}}
+            {{/each}}
+        {{/unless}}
+    {{/unless}}
+</div>

@@ -1,0 +1,13 @@
+{{#unless cart}}
+    {{!-- caso en el que productos esta vacio --}}
+    <h2>No hay resultados...</h2>
+{{else}}
+    {{!-- caso en el que existen productos --}}
+        {{#each cart}}
+            {{>ItemCart item=this}} 
+        {{/each}}
+        <div class="send">
+            <button id="sendPedido">Realizar pedido</button>
+        </div>
+        
+{{/unless}}   

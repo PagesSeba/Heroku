@@ -1,0 +1,145 @@
+.item {
+  min-height: 500px;
+  display: flex;
+  margin: 20px 7vw;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  justify-content: flex-end;
+}
+
+.img-container {
+  width: auto;
+  height: auto;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px 0 0 20px;
+  display: flex;
+  padding: 0 1vw;
+}
+
+.img-container img {
+  max-height: 450px;
+  max-width: 360px;
+  object-fit: contain;
+  border-radius: 20px 0 0 20px;
+}
+
+.img-container h2 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  color: white;
+  text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.2);
+  font-size: xx-large;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+}
+
+.detail-container {
+  background-color: rgb(25, 25, 25);
+  width: 75%;
+  min-width: 50%;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.detail-container h1 {
+  font-size: 46px;
+}
+
+.detail {
+  text-align: justify;
+  padding: 0 30px;
+  font-size: large;
+}
+
+.detail-container hr {
+  border: 0;
+  height: 3px;
+  min-width: 30px;
+  background-color: rgb(20, 141, 172);
+  margin: 10px 0 10px;
+  align-self: flex-start;
+}
+
+.price {
+  align-self: center;
+  font-size: x-large;
+}
+
+.detail-container span {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.divSpan {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.buttonAdd {
+  min-width: 200px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid rgb(20, 141, 172);
+  background: rgb(20, 141, 172);
+}
+
+.buttonAdd:hover {
+  background: #fff;
+  color: rgb(20, 141, 172);
+}
+
+@media (max-width: 972px) {
+  .item {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .img-container {
+    min-height: 450px;
+    border-radius: 20px 20px 0 0;
+    justify-content: center;
+  }
+
+  .img-container img {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .img-container h2 {
+    position: absolute;
+    left: 10vw;
+  }
+
+  .detail-container {
+    border-radius: 0 0 20px 20px;
+    height: auto;
+    width: 100%;
+  }
+
+  .detail-container .price,
+  .detail-container p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .detail-container span {
+    padding-top: 15px;
+  }
+}

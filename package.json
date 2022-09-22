@@ -1,32 +1,28 @@
 {
   "dependencies": {
-    "@faker-js/faker": "^7.3.0",
+    "bcrypt": "^5.0.1",
+    "connect-mongo": "^4.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-handlebars": "^6.0.6",
-    "connect-mongo": "^4.6.0",
     "express-session": "^1.17.3",
-    "firebase-admin": "^11.0.1",
-    "nodemon": "^2.0.16",
-    "normalizr": "^3.6.2",
-    "socket.io": "^4.5.1",
-    "sqlite3": "^5.0.8",
-    "bcrypt": "^5.0.1",
-    "cookie-parser": "^1.4.6",
-    "mongoose": "^6.5.0",
+    "firebase-admin": "^11.0.0",
+    "log4js": "^6.6.1",
+    "mongoose": "^6.4.7",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.7.8",
+    "nodemon": "^2.0.20",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
-    "dotenv": "^16.0.1",
-    "yargs": "^17.5.1",
-    "minimist": "^1.2.6",
-    "autocannon": "^7.9.0",
-    "compression": "^1.7.4",
-    "log4js": "^6.6.1"
+    "twilio": "^3.82.0"
   },
+  "type": "module",
   "name": "backendcoderpagess.npm",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "node benchmark.js",
-    "start": "nodemon ./server.js"
+    "start": "nodemon ./src/server.js"
   }
 }

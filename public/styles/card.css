@@ -1,0 +1,131 @@
+.card {
+  max-height: 375px;
+  width: 200px;
+  margin: 3rem;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0px 5px 20px 0px rgb(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: white;
+}
+
+.card .img-container {
+  min-height: 175px;
+  max-height: 200px;
+  padding: 5px;
+}
+
+.card .product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.description-container {
+  padding: 0 20px;
+}
+
+.product-name {
+  font-size: large;
+  font-weight: bold;
+  max-height: 50px;
+}
+
+.product-price {
+  display: flex;
+  width: 75px;
+  height: 75px;
+  background-color: var(--blue400);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
+.product-price p {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: large;
+  margin-top: 50%;
+  margin-bottom: 50%;
+}
+
+.product-stock {
+  color: rgb(100, 100, 100);
+}
+
+.product-stock hr {
+  border: 0;
+  height: 3px;
+  width: 30px;
+  background-color: #1c8b73;
+  margin: 10px 0 10px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.divButton {
+  text-align: center;
+}
+
+.btnSee {
+  width: 75%;
+  height: 40px;
+  color: #fff;
+  padding: 0 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid rgb(20, 141, 172);
+  background: rgb(20, 141, 172);
+  margin-bottom: 15%;
+}
+
+.btnSee:hover {
+  background: #fff;
+  color: rgb(20, 141, 172);
+}
+
+.adminBtn {
+  position: absolute;
+  margin-top: -200px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 175px;
+}
+
+.btnModify a {
+  color: black;
+}
+
+.btnDelete,
+.btnModify {
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 30px;
+  left: 23px;
+  box-shadow: 0px 5px 20px 0px rgb(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 0 10px 10px 0;
+}
+
+.btnDelete :hover {
+  color: red;
+}
+
+.btnModify :hover {
+  color: rgb(20, 141, 172);
+}

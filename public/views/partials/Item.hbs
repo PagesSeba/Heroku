@@ -1,0 +1,24 @@
+<div class='card'>
+    <div class='img-container'>
+        <img class='product-img' src={{item.thumbnail}} alt="Imagen del producto" />
+    </div>
+    <div class="product-price">
+        <p>${{item.price}}</p>
+    </div>
+    <div class='description-container'>
+        <p class="product-name">{{item.title}}</p>
+        <div class='product-stock'>
+            <hr />
+            <p>stock: {{item.stock}}</p>
+        </div>
+    </div>
+    <div class='divButton'>
+        <a href='/item/?id={{item.id}}'><button class='btnSee'>Ver producto</button></a>
+    </div>
+    {{#if admin}}
+    <div class="adminBtn">
+        <button class="btnDelete" id="{{item.id}}"><i class="fa fa-trash"></i></button>
+        <button class="btnModify"><a href="/item/?id={{item.id}}"><i class="fa fa-pencil"></i></a></button>
+    </div>
+    {{/if}}
+</div>

@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --texto: rgb(255, 255, 255);
+  --bgclr: rgb(255, 255, 255);
+  --blue200: rgb(33, 180, 210);
+  --blue400: rgb(20, 141, 172);
+  --black200: rgb(150, 150, 150);
+  --black400: rgb(85, 85, 85);
+  --black600: rgb(25, 25, 25);
+}
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  background-color: #1c8b73 !important;
+  /* justify-content: flex-start; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  z-index: 999;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar-rigth {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-cart {
+  font-size: 25px;
+  margin: 0 2vw;
+}
+
+.nav-logo {
+  font-size: xx-large;
+}
+
+/* .item-container {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 16rem);
+  justify-content: center;
+} */
+
+.list-card {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 16rem);
+  justify-content: center;
+  gap: 20px;
+}
+
+.rounded-pill {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  /* background-image: url(https://cdn-icons-png.flaticon.com/512/1077/1077012.png);
+  background-size: contain;
+  background-repeat: no-repeat; */
+  background-color: white;
+  border: 1px white solid;
+}
+
+#productForm,
+#productFormPut {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.productForm,
+.productFormPut {
+  background-color: #e9ecef;
+  padding: 20px;
+}
+
+#productForm input,
+#productFormPut input {
+  padding: 5px 20px;
+}
+
+#productForm .btn,
+#productFormPut .btn {
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: white 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  justify-content: center;
+}
+
+#sendPedido {
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: white 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}

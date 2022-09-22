@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand bg-dark navbar-dark">
+    {{> navBar}}
+</nav>
+<div class="user-container">
+    <div class="user-img-container">
+        <img src="../uploads/{{user.avatar}}" alt=" ">
+    </div>
+    <div class="user-info-container">
+        <div class="user-name">
+            <h3>{{user.firstName}} {{user.lastName}}</h3>
+        </div>
+        {{!-- --}}
+        <div class="user-info">
+            <div class="icon-info">
+                <i class="fa fa-envelope-o"></i>
+            </div>
+            <div class="info-info">
+                <p class="key-info">E-mail</p>
+                <p class="value-info">{{user.email}}</p>
+            </div>
+        </div>
+        {{!-- --}}
+        {{!-- --}}
+        <div class="user-info">
+            <div class="icon-info">
+                <i class="fa fa-user-o"></i>
+            </div>
+            <div class="info-info">
+                <p class="key-info">Usuario</p>
+                <p class="value-info">{{user.username}}</p>
+            </div>
+        </div>
+        {{!-- --}}
+        {{!-- --}}
+        <div class="user-info">
+            <div class="icon-info">
+                <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="info-info">
+                <p class="key-info">Direccion</p>
+                <p class="value-info">{{user.address}}</p>
+            </div>
+        </div>
+        {{!-- --}}
+        {{!-- --}}
+        <div class="user-info">
+            <div class="icon-info">
+                <i class="fa fa-mobile"></i>
+            </div>
+            <div class="info-info">
+                <p class="key-info">Telefono</p>
+                <p class="value-info">{{user.phone}}</p>
+            </div>
+        </div>
+        {{!-- --}}
+        {{!-- --}}
+        <div class="user-info">
+            <div class="icon-info">
+                <i class="fa fa-birthday-cake"></i>
+            </div>
+            <div class="info-info">
+                <p class="key-info">Edad</p>
+                <p class="value-info">{{user.age}}</p>
+            </div>
+        </div>
+        {{!-- --}}
+    </div>
+</div>
